@@ -60,7 +60,7 @@ for x in range(100):
     
     llDiff = calcLL(dataset, b2) - calcLL(dataset, b)  # ΔLL := LL(y | X, θ') - LL(y | X, θ)
     b = b2 # θj := θ'j
-#    if llDiff < 0.001:
+#    if llDiff < tolerance:
 #        break
 
 # Display expected outcome, the predicted outcome, and the probability of y = 1
